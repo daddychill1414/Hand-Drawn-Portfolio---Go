@@ -235,19 +235,40 @@
               </div>
             </article>
 
-            <!-- Contact Callout -->
-            <aside class="sketch-cta-banner" id="contact">
-              <div>
-                <h3 style="font-size: 2.2rem; margin-bottom: 4px;">Let's connect!</h3>
-                <p style="font-family: var(--font-kalam); color: var(--ink-muted);">
-                  I am eager to discuss OJT training, student collaborations, or web development projects.
-                </p>
-              </div>
-              <div style="display: flex; gap: 14px; flex-wrap: wrap;">
-                <a href="mailto:raniel.go112@gmail.com" class="btn-sketch btn-sketch-pink">Send Email ✉</a>
-                <a href="projects.html" class="btn-sketch btn-sketch-secondary">View Projects ↳</a>
-              </div>
-            </aside>
+            <!-- Interactive Contact Form -->
+            <article class="sketch-bio-card" id="contact">
+              <div class="washi-tape-strip washi-tape-pink-strip"></div>
+              <span style="font-family: var(--font-kalam); color: var(--marker-pink-dark); font-weight: 700;">★ CHAPTER 04 // CONTACT ME</span>
+              <h2 style="font-size: 2.4rem; margin-block: 6px 12px;">Send Me a Message ✉</h2>
+              <p class="subhead-hand">
+                Have a project inquiry, OJT opportunity, or question? Fill out the form below to send an email directly to my inbox!
+              </p>
+
+              <form action="https://api.web3forms.com/submit" method="POST" style="display: flex; flex-direction: column; gap: 16px; margin-top: 20px;">
+                <!-- Web3Forms Key & Redirect -->
+                <input type="hidden" name="access_key" value="48e7e1ef-b328-406c-829d-92790e7292a4" />
+                <input type="hidden" name="subject" value="New Portfolio Message from Jean Raniel's Website" />
+
+                <div style="display: flex; flex-direction: column; gap: 6px;">
+                  <label style="font-family: var(--font-kalam); font-weight: 700; font-size: 1.1rem; color: var(--ink-dark);">Your Name ✎</label>
+                  <input type="text" name="name" placeholder="e.g. Juan Dela Cruz" required style="padding: 10px 14px; font-family: inherit; font-size: 1rem; border: 2px solid var(--ink-border); border-radius: 8px; background: #fff;" />
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 6px;">
+                  <label style="font-family: var(--font-kalam); font-weight: 700; font-size: 1.1rem; color: var(--ink-dark);">Your Email Address ✉</label>
+                  <input type="email" name="email" placeholder="e.g. juan@example.com" required style="padding: 10px 14px; font-family: inherit; font-size: 1rem; border: 2px solid var(--ink-border); border-radius: 8px; background: #fff;" />
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 6px;">
+                  <label style="font-family: var(--font-kalam); font-weight: 700; font-size: 1.1rem; color: var(--ink-dark);">Message 📝</label>
+                  <textarea name="message" rows="5" placeholder="Write your message here..." required style="padding: 10px 14px; font-family: inherit; font-size: 1rem; border: 2px solid var(--ink-border); border-radius: 8px; background: #fff; resize: vertical;"></textarea>
+                </div>
+
+                <button type="submit" class="btn-sketch btn-sketch-primary" style="align-self: flex-start; font-size: 1.1rem; padding: 8px 24px;">
+                  Send Message ✉
+                </button>
+              </form>
+            </article>
 
           </div>
         </div>
