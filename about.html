@@ -244,7 +244,7 @@
                 Have a project inquiry, OJT opportunity, or question? Fill out the form below to send an email directly to my inbox!
               </p>
 
-              <form action="https://api.web3forms.com/submit" method="POST" style="display: flex; flex-direction: column; gap: 16px; margin-top: 20px;">
+              <form id="contactForm" style="display: flex; flex-direction: column; gap: 16px; margin-top: 20px;">
                 <!-- Web3Forms Key & Redirect -->
                 <input type="hidden" name="access_key" value="f10f819f-e9cb-46de-b2c2-6d79b23ec344" />
                 <input type="hidden" name="subject" value="New Portfolio Message from Jean Raniel's Website" />
@@ -264,10 +264,16 @@
                   <textarea name="message" rows="5" placeholder="Write your message here..." required style="padding: 10px 14px; font-family: inherit; font-size: 1rem; border: 2px solid var(--ink-border); border-radius: 8px; background: #fff; resize: vertical;"></textarea>
                 </div>
 
-                <button type="submit" class="btn-sketch btn-sketch-primary" style="align-self: flex-start; font-size: 1.1rem; padding: 8px 24px;">
+                <button type="submit" id="submitBtn" class="btn-sketch btn-sketch-primary" style="align-self: flex-start; font-size: 1.1rem; padding: 8px 24px;">
                   Send Message ✉
                 </button>
               </form>
+
+              <!-- Hand-Drawn Toast Notification Container -->
+              <div id="toastNotif" style="display: none; margin-top: 18px; padding: 14px 20px; border: 2px solid var(--ink-border); border-radius: 12px; background: #e6f4ea; color: #137333; font-family: var(--font-kalam); font-size: 1.15rem; font-weight: 700; align-items: center; gap: 10px; box-shadow: 4px 4px 0 var(--ink-dark);">
+                <span>🎉</span>
+                <span>Message sent successfully! Thanks for reaching out.</span>
+              </div>
             </article>
 
           </div>

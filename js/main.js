@@ -182,4 +182,52 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(resizeLandingIframes, 50);
     });
   });
+
+  // ── AJAX CONTACT FORM HANDLER WITH TOAST NOTIFICATION ──
+  const contactForm = document.getElementById('contactForm');
+  const toastNotif = document.getElementById('toastNotif');
+  const submitBtn = document.getElementById('submitBtn');
+
+  if (contactForm && toastNotif && submitBtn) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const originalText = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = 'Sending... ⌛';
+      toastNotif.style.display = 'none';
+
+      try {
+        const formData = new FormData(contactForm);
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+          toastNotif.style.display = 'flex';
+          toastNotif.style.background = '#e6f4ea';
+          toastNotif.style.color = '#137333';
+          toastNotif.innerHTML = '<span>🎉</span><span>Message sent successfully! Thanks for reaching out.</span>';
+          contactForm.reset();
+        } else {
+          toastNotif.style.display = 'flex';
+          toastNotif.style.background = '#fce8e6';
+          toastNotif.style.color = '#c5221f';
+          toastNotif.innerHTML = '<span>⚠️</span><span>' + (data.message || 'Submission failed. Please try again.') + '</span>';
+        }
+      } catch (err) {
+        toastNotif.style.display = 'flex';
+        toastNotif.style.background = '#fce8e6';
+        toastNotif.style.color = '#c5221f';
+        toastNotif.innerHTML = '<span>⚠️</span><span>Network error. Please try again.</span>';
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+      }
+    });
+  }
 });
+
