@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Hand-drawn Avatar Illustration -->
+  <rect width="200" height="200" fill="#faf7ee" />
+  <!-- Polaroid border -->
+  <rect x="15" y="15" width="170" height="170" rx="8" fill="#ffffff" stroke="#222222" stroke-width="4" transform="rotate(1.5 100 100)" />
+  <!-- Inner sketch frame -->
+  <rect x="25" y="25" width="150" height="120" fill="#fef08a" stroke="#222222" stroke-width="3" />
+  <!-- Head -->
+  <circle cx="100" cy="72" r="32" fill="#ffffff" stroke="#222222" stroke-width="3.5" />
+  <!-- Hair -->
+  <path d="M72 70 C70 45, 128 45, 128 70 C122 55, 78 55, 72 70 Z" fill="#222222" />
+  <!-- Smile -->
+  <path d="M90 82 Q100 94 110 82" stroke="#222222" stroke-width="3" fill="none" stroke-linecap="round" />
+  <!-- Eyes -->
+  <circle cx="90" cy="70" r="3" fill="#222222" />
+  <circle cx="110" cy="70" r="3" fill="#222222" />
+  <!-- Torso -->
+  <path d="M55 145 C55 110, 145 110, 145 145 Z" fill="#bae6fd" stroke="#222222" stroke-width="3.5" />
+  <!-- Caption text -->
+  <text x="100" y="172" font-family="'Caveat', cursive" font-size="20" font-weight="700" fill="#222222" text-anchor="middle">Jean Raniel ✎</text>
+</svg>

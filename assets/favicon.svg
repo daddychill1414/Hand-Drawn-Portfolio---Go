@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Hand-drawn sticky note favicon -->
+  <rect x="6" y="8" width="88" height="84" rx="10" fill="#fef08a" stroke="#222222" stroke-width="5" transform="rotate(-3 50 50)" />
+  <!-- Tape strip -->
+  <rect x="32" y="2" width="36" height="14" fill="rgba(186, 230, 253, 0.9)" stroke="#222222" stroke-width="2" transform="rotate(2 50 9)" />
+  <text x="50" y="68" font-family="'Caveat', 'Comic Sans MS', cursive" font-size="52" font-weight="700" fill="#222222" text-anchor="middle">G</text>
+</svg>

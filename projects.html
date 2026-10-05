@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by Jean Raniel Go — Hand-drawn portfolio showcase featuring the actual live landing page of each deployed web application." />
+  <title>Projects ✎ Jean Raniel Go</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ================================================
+       SKETCHBOOK NAVBAR
+       ================================================ -->
+  <header class="sketch-nav" id="mainHeader">
+    <div class="container sketch-nav-inner">
+      <a href="index.html" class="sketch-brand" aria-label="Go to Homepage">
+        <div class="sketch-avatar-icon">G</div>
+        <div class="sketch-brand-text">
+          <span class="sketch-brand-title">Jean Raniel Go</span>
+          <span class="sketch-brand-sub">✏️ Student Web Notebook</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav aria-label="Primary Navigation">
+        <ul class="sketch-nav-links">
+          <li><a href="index.html" class="sketch-nav-link" id="navHome">Home</a></li>
+          <li><a href="about.html" class="sketch-nav-link" id="navAbout">About Me</a></li>
+          <li><a href="projects.html" class="sketch-nav-link active" id="navProjects">✎ Projects</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Action & Mobile Button -->
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <a href="about.html" class="btn-sketch btn-sketch-secondary sketch-nav-cta" style="padding: 6px 18px; font-size: 1rem;">
+          About Me ✎
+        </a>
+        <button class="sketch-mobile-toggle" id="sketchMobileToggle" aria-label="Toggle menu">
+          Menu ☰
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Drawer -->
+    <div class="sketch-mobile-drawer" id="sketchMobileDrawer">
+      <a href="index.html">Home <span>→</span></a>
+      <a href="about.html">About Me <span>→</span></a>
+      <a href="projects.html" class="active">✎ Projects <span>→</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        
+        <!-- Header -->
+        <div style="max-width: 680px;">
+          <span style="font-family: var(--font-kalam); color: var(--marker-pink-dark); font-weight: 700;">★ EXHIBITION OF DEPLOYED SITES</span>
+          <h1 class="headline-hand">
+            Featured <span class="highlight-yellow">Projects</span> &amp; Builds.
+          </h1>
+          <p class="subhead-hand">
+            Each card below displays the <strong>actual, live landing page</strong> of the deployed application inside a hand-drawn browser frame! Hover or click to open the live site.
+          </p>
+
+          <!-- Hand-Drawn Filter Buttons -->
+          <div class="sketch-filter-bar" role="tablist" aria-label="Project Filters">
+            <button class="sketch-filter-btn active" data-filter="all" role="tab">All Projects ★</button>
+            <button class="sketch-filter-btn" data-filter="ai" role="tab">AI & Recruitment 🤖</button>
+            <button class="sketch-filter-btn" data-filter="community" role="tab">Community Relief 🤝</button>
+            <button class="sketch-filter-btn" data-filter="realestate" role="tab">Real Estate 🏡</button>
+            <button class="sketch-filter-btn" data-filter="ecommerce" role="tab">Bakery E-Commerce 🎂</button>
+            <button class="sketch-filter-btn" data-filter="gaming" role="tab">Gaming Community 🎮</button>
+          </div>
+        </div>
+
+        <!-- Hand-Drawn Projects Grid -->
+        <div class="sketch-projects-grid" id="sketchProjectsGrid">
+
+          <!-- ==============================================
+               Project: Sales Agent Platform
+               ============================================== -->
+          <article class="sketch-project-card" data-category="ai">
+            <div class="washi-tape-strip"></div>
+            
+            <!-- Actual Live Landing Page in Browser Frame -->
+            <div class="sketch-browser-frame">
+              <div class="sketch-browser-bar">
+                <div class="sketch-dots">
+                  <span class="s-dot s-dot-1"></span>
+                  <span class="s-dot s-dot-2"></span>
+                  <span class="s-dot s-dot-3"></span>
+                </div>
+                <div class="sketch-url-bar">sales-agent-platform-inky.vercel.app</div>
+              </div>
+
+              <!-- Live Viewport -->
+              <div class="live-landing-viewport">
+                <div class="live-landing-scaler">
+                  <iframe 
+                    src="https://sales-agent-platform-inky.vercel.app/" 
+                    title="Sales Agent Platform Actual Live Landing Page" 
+                    loading="lazy" 
+                    tabindex="-1"
+                  ></iframe>
+                </div>
+                <a href="https://sales-agent-platform-inky.vercel.app/" target="_blank" rel="noopener noreferrer" class="live-landing-overlay" aria-label="Open Sales Agent Platform in new tab">
+                  <span class="preview-open-badge">Open Live Landing Page ↗</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card Body -->
+            <div class="sketch-project-body">
+              <span class="sketch-project-category">AI &amp; Recruitment Platform</span>
+              <h2 class="sketch-project-name">Sales Agent Platform</h2>
+              <p class="sketch-project-desc">
+                Full-stack AI recruitment and talent management suite with automated application pipelines, custom candidate screening, online exams, and contract signing.
+              </p>
+              <div class="sketch-project-tags">
+                <span class="sketch-tag-chip">Next.js 16</span>
+                <span class="sketch-tag-chip">TypeScript</span>
+                <span class="sketch-tag-chip">Supabase</span>
+                <span class="sketch-tag-chip">Tailwind</span>
+                <span class="sketch-tag-chip">Vercel</span>
+              </div>
+              <div class="sketch-project-footer">
+                <a href="https://sales-agent-platform-inky.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-sketch btn-sketch-primary" style="padding: 4px 14px; font-size: 0.95rem;">
+                  Live Site ↗
+                </a>
+                <button class="btn-sketch btn-sketch-secondary" onclick="openProjectModal('sales-agent')" style="padding: 4px 14px; font-size: 0.95rem;">
+                  Details ✎
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ==============================================
+               Project: Damayan
+               ============================================== -->
+          <article class="sketch-project-card" data-category="community">
+            <div class="washi-tape-strip washi-tape-blue-strip"></div>
+            
+            <!-- Actual Live Landing Page in Browser Frame -->
+            <div class="sketch-browser-frame">
+              <div class="sketch-browser-bar">
+                <div class="sketch-dots">
+                  <span class="s-dot s-dot-1"></span>
+                  <span class="s-dot s-dot-2"></span>
+                  <span class="s-dot s-dot-3"></span>
+                </div>
+                <div class="sketch-url-bar">damayan-seven.vercel.app</div>
+              </div>
+
+              <!-- Live Viewport -->
+              <div class="live-landing-viewport">
+                <div class="live-landing-scaler">
+                  <iframe 
+                    src="https://damayan-seven.vercel.app/" 
+                    title="Damayan Platform Actual Live Landing Page" 
+                    loading="lazy" 
+                    tabindex="-1"
+                  ></iframe>
+                </div>
+                <a href="https://damayan-seven.vercel.app/" target="_blank" rel="noopener noreferrer" class="live-landing-overlay" aria-label="Open Damayan in new tab">
+                  <span class="preview-open-badge">Open Live Landing Page ↗</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card Body -->
+            <div class="sketch-project-body">
+              <span class="sketch-project-category">Community &amp; Disaster Relief</span>
+              <h2 class="sketch-project-name">Damayan</h2>
+              <p class="sketch-project-desc">
+                Community assistance and mutual aid platform connecting donors, emergency volunteers, and relief distribution networks during crises.
+              </p>
+              <div class="sketch-project-tags">
+                <span class="sketch-tag-chip">React</span>
+                <span class="sketch-tag-chip">Tailwind CSS</span>
+                <span class="sketch-tag-chip">Vercel</span>
+              </div>
+              <div class="sketch-project-footer">
+                <a href="https://damayan-seven.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-sketch btn-sketch-primary" style="padding: 4px 14px; font-size: 0.95rem;">
+                  Live Site ↗
+                </a>
+                <button class="btn-sketch btn-sketch-secondary" onclick="openProjectModal('damayan')" style="padding: 4px 14px; font-size: 0.95rem;">
+                  Details ✎
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ==============================================
+               Project 1: Marci Metzger Redesign
+               ============================================== -->
+          <article class="sketch-project-card" data-category="realestate">
+            <div class="washi-tape-strip"></div>
+            
+            <!-- Actual Live Landing Page in Browser Frame -->
+            <div class="sketch-browser-frame">
+              <div class="sketch-browser-bar">
+                <div class="sketch-dots">
+                  <span class="s-dot s-dot-1"></span>
+                  <span class="s-dot s-dot-2"></span>
+                  <span class="s-dot s-dot-3"></span>
+                </div>
+                <div class="sketch-url-bar">marci-metzger-redesign.vercel.app</div>
+              </div>
+
+              <!-- Live Viewport -->
+              <div class="live-landing-viewport">
+                <div class="live-landing-scaler">
+                  <iframe 
+                    src="https://marci-metzger-redesign.vercel.app/" 
+                    title="Marci Metzger Redesign Actual Live Landing Page" 
+                    loading="lazy" 
+                    tabindex="-1"
+                  ></iframe>
+                </div>
+                <a href="https://marci-metzger-redesign.vercel.app/" target="_blank" rel="noopener noreferrer" class="live-landing-overlay" aria-label="Open Marci Metzger Redesign in new tab">
+                  <span class="preview-open-badge">Open Live Landing Page ↗</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card Body -->
+            <div class="sketch-project-body">
+              <span class="sketch-project-category">Real Estate Platform</span>
+              <h2 class="sketch-project-name">Marci Metzger Redesign</h2>
+              <p class="sketch-project-desc">
+                A complete website redesign for Pahrump's premier realtor, featuring responsive property search widgets, animated showcase galleries, and consultation contact forms.
+              </p>
+              <div class="sketch-project-tags">
+                <span class="sketch-tag-chip">HTML5</span>
+                <span class="sketch-tag-chip">CSS3</span>
+                <span class="sketch-tag-chip">JavaScript</span>
+                <span class="sketch-tag-chip">Vercel</span>
+              </div>
+              <div class="sketch-project-footer">
+                <a href="https://marci-metzger-redesign.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-sketch btn-sketch-primary" style="padding: 4px 14px; font-size: 0.95rem;">
+                  Live Site ↗
+                </a>
+                <button class="btn-sketch btn-sketch-secondary" onclick="openProjectModal('marci-metzger')" style="padding: 4px 14px; font-size: 0.95rem;">
+                  Details ✎
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ==============================================
+               Project 2: Golden Whisk Bakery
+               ============================================== -->
+          <article class="sketch-project-card" data-category="ecommerce">
+            <div class="washi-tape-strip washi-tape-pink-strip"></div>
+            
+            <!-- Actual Live Landing Page in Browser Frame -->
+            <div class="sketch-browser-frame">
+              <div class="sketch-browser-bar">
+                <div class="sketch-dots">
+                  <span class="s-dot s-dot-1"></span>
+                  <span class="s-dot s-dot-2"></span>
+                  <span class="s-dot s-dot-3"></span>
+                </div>
+                <div class="sketch-url-bar">goldenwhisk-flax.vercel.app</div>
+              </div>
+
+              <!-- Live Viewport -->
+              <div class="live-landing-viewport">
+                <div class="live-landing-scaler">
+                  <iframe 
+                    src="https://goldenwhisk-flax.vercel.app/" 
+                    title="Golden Whisk Bakery Actual Live Landing Page" 
+                    loading="lazy" 
+                    tabindex="-1"
+                  ></iframe>
+                </div>
+                <a href="https://goldenwhisk-flax.vercel.app/" target="_blank" rel="noopener noreferrer" class="live-landing-overlay" aria-label="Open Golden Whisk Bakery in new tab">
+                  <span class="preview-open-badge">Open Live Landing Page ↗</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card Body -->
+            <div class="sketch-project-body">
+              <span class="sketch-project-category">Bakery E-Commerce</span>
+              <h2 class="sketch-project-name">Golden Whisk Bakery</h2>
+              <p class="sketch-project-desc">
+                Artisan cake business storefront featuring an interactive "Build Your Own Cake" customizer, signature pastry catalog, and custom order request workflows.
+              </p>
+              <div class="sketch-project-tags">
+                <span class="sketch-tag-chip">HTML5</span>
+                <span class="sketch-tag-chip">CSS Grid</span>
+                <span class="sketch-tag-chip">Flexbox</span>
+                <span class="sketch-tag-chip">Vercel</span>
+              </div>
+              <div class="sketch-project-footer">
+                <a href="https://goldenwhisk-flax.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-sketch btn-sketch-primary" style="padding: 4px 14px; font-size: 0.95rem;">
+                  Live Site ↗
+                </a>
+                <button class="btn-sketch btn-sketch-secondary" onclick="openProjectModal('golden-whisk')" style="padding: 4px 14px; font-size: 0.95rem;">
+                  Details ✎
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ==============================================
+               Project 3: Gameteract Platform
+               ============================================== -->
+          <article class="sketch-project-card" data-category="gaming">
+            <div class="washi-tape-strip washi-tape-blue-strip"></div>
+            
+            <!-- Actual Live Landing Page in Browser Frame -->
+            <div class="sketch-browser-frame">
+              <div class="sketch-browser-bar">
+                <div class="sketch-dots">
+                  <span class="s-dot s-dot-1"></span>
+                  <span class="s-dot s-dot-2"></span>
+                  <span class="s-dot s-dot-3"></span>
+                </div>
+                <div class="sketch-url-bar">gameteract.vercel.app</div>
+              </div>
+
+              <!-- Live Viewport -->
+              <div class="live-landing-viewport">
+                <div class="live-landing-scaler">
+                  <iframe 
+                    src="https://gameteract.vercel.app/" 
+                    title="Gameteract Platform Actual Live Landing Page" 
+                    loading="lazy" 
+                    tabindex="-1"
+                  ></iframe>
+                </div>
+                <a href="https://gameteract.vercel.app/" target="_blank" rel="noopener noreferrer" class="live-landing-overlay" aria-label="Open Gameteract in new tab">
+                  <span class="preview-open-badge">Open Live Landing Page ↗</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card Body -->
+            <div class="sketch-project-body">
+              <span class="sketch-project-category">Gaming Community</span>
+              <h2 class="sketch-project-name">Gameteract Platform</h2>
+              <p class="sketch-project-desc">
+                A gaming community platform connecting players with compatible squadmates via matchmaking algorithms, gamer rank profiles, and real-time chat circles.
+              </p>
+              <div class="sketch-project-tags">
+                <span class="sketch-tag-chip">React</span>
+                <span class="sketch-tag-chip">Firebase</span>
+                <span class="sketch-tag-chip">Firestore</span>
+                <span class="sketch-tag-chip">Real-time DB</span>
+              </div>
+              <div class="sketch-project-footer">
+                <a href="https://gameteract.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-sketch btn-sketch-primary" style="padding: 4px 14px; font-size: 0.95rem;">
+                  Live Site ↗
+                </a>
+                <button class="btn-sketch btn-sketch-secondary" onclick="openProjectModal('gameteract')" style="padding: 4px 14px; font-size: 0.95rem;">
+                  Details ✎
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Back to About / Home Banner -->
+        <aside class="sketch-cta-banner" style="margin-top: 56px;">
+          <div>
+            <h3 style="font-size: 2.2rem; margin-bottom: 4px;">Want to know more about my background?</h3>
+            <p style="font-family: var(--font-kalam); color: var(--ink-muted);">
+              Visit the About Me page for my full educational timeline at MSEUF and student journey.
+            </p>
+          </div>
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="about.html" class="btn-sketch btn-sketch-primary">Go to About Me ✎</a>
+            <a href="index.html" class="btn-sketch btn-sketch-secondary">Back to Home</a>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ================================================
+       SKETCHBOOK DETAILS MODAL DIALOG
+       ================================================ -->
+  <div class="sketch-modal-overlay" id="projectModalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle" aria-hidden="true">
+    <div class="sketch-modal-box">
+      <div class="sketch-modal-header">
+        <div>
+          <span style="font-family:var(--font-kalam);font-size:0.85rem;color:var(--marker-pink-dark);font-weight:700;" id="modalProjectCategory">
+            CATEGORY
+          </span>
+          <h2 id="modalProjectTitle" style="font-size: 1.8rem; margin: 0;">Project Title</h2>
+        </div>
+        <button class="sketch-modal-close" id="projectModalClose" aria-label="Close dialog">✕</button>
+      </div>
+
+      <div class="sketch-modal-body">
+        <div class="sketch-modal-live-banner" id="modalPreviewBanner">
+          <!-- Dynamically populated live landing iframe -->
+        </div>
+
+        <p id="modalProjectDesc" style="font-size: 1.05rem; line-height: 1.65; color: #2b2b2b; margin-bottom: 18px;">
+          Project description details.
+        </p>
+
+        <h3 style="font-size: 1.6rem; margin-bottom: 8px;">Key Features</h3>
+        <div id="modalFeaturesList">
+          <!-- Features list -->
+        </div>
+
+        <h3 style="font-size: 1.6rem; margin-top: 18px; margin-bottom: 8px;">Technologies</h3>
+        <div class="sketch-project-tags" id="modalTagsContainer">
+          <!-- Tags list -->
+        </div>
+
+        <div style="margin-top: 20px; padding-top: 14px; border-top: 2px dashed var(--ink-border); display: flex; justify-content: flex-end;">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn-sketch btn-sketch-primary" id="modalLiveBtn">
+            Open Live Site ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================
+       FOOTER
+       ================================================ -->
+  <footer class="sketch-footer">
+    <div class="container">
+      <div class="sketch-footer-grid">
+        <div>
+          <div class="sketch-footer-title">Jean Raniel Go ✎</div>
+          <p style="font-family: var(--font-kalam); font-size: 0.95rem; color: var(--ink-muted); max-width: 340px; line-height: 1.6;">
+            A hand-drawn starter portfolio website crafted with HTML &amp; CSS for my student midterm showcase.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="font-size: 1.5rem; margin-bottom: 10px;">Quick Pages</h4>
+          <ul class="sketch-footer-links">
+            <li><a href="index.html">✎ Home Page</a></li>
+            <li><a href="about.html">✎ About Me &amp; Education</a></li>
+            <li><a href="projects.html">✎ Featured Projects</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 1.5rem; margin-bottom: 10px;">Contact Notes</h4>
+          <ul class="sketch-footer-links">
+            <li>✉ raniel.go112@gmail.com</li>
+            <li>📍 MSEUF, Lucena City, PH</li>
+            <li><a href="https://ranielgo-portfolio.vercel.app" target="_blank" rel="noopener noreferrer">Live Vercel Site ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sketch-footer-bar">
+        <div>© 2026 Jean Raniel Go · Sketched with care</div>
+        <div>Built using Semantic HTML5 &amp; Vanilla CSS</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

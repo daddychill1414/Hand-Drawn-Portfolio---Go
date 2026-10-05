@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jean Raniel Go — Hand-Drawn Sketchbook Starter Portfolio. IT Student at MSEUF Lucena." />
+  <title>Jean Raniel Go ✎ Hand-Drawn Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ================================================
+       SKETCHBOOK NAVBAR
+       ================================================ -->
+  <header class="sketch-nav" id="mainHeader">
+    <div class="container sketch-nav-inner">
+      <a href="index.html" class="sketch-brand" aria-label="Go to Homepage">
+        <div class="sketch-avatar-icon">G</div>
+        <div class="sketch-brand-text">
+          <span class="sketch-brand-title">Jean Raniel Go</span>
+          <span class="sketch-brand-sub">✏️ Student Web Notebook</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav aria-label="Primary Navigation">
+        <ul class="sketch-nav-links">
+          <li><a href="index.html" class="sketch-nav-link active" id="navHome">✎ Home</a></li>
+          <li><a href="about.html" class="sketch-nav-link" id="navAbout">About Me</a></li>
+          <li><a href="projects.html" class="sketch-nav-link" id="navProjects">Projects</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Action & Mobile Button -->
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <a href="about.html#contact" class="btn-sketch btn-sketch-pink sketch-nav-cta" style="padding: 6px 18px; font-size: 1rem;">
+          Say Hello! ✉
+        </a>
+        <button class="sketch-mobile-toggle" id="sketchMobileToggle" aria-label="Toggle menu">
+          Menu ☰
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Drawer -->
+    <div class="sketch-mobile-drawer" id="sketchMobileDrawer">
+      <a href="index.html" class="active">✎ Home <span>→</span></a>
+      <a href="about.html">About Me <span>→</span></a>
+      <a href="projects.html">Projects <span>→</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================================================
+         HERO SECTION (SKETCHBOOK DESK)
+         ================================================ -->
+    <section class="section">
+      <div class="container">
+        <div class="hero-sketch-layout">
+
+          <!-- Left Column: Hero Narrative -->
+          <div>
+            <div class="doodle-badge">
+              <span>📌</span>
+              <span>Available for OJT &amp; Projects!</span>
+            </div>
+
+            <h1 class="headline-hand">
+              Hey there! I'm <br />
+              <span class="highlight-yellow">Jean Raniel Go</span>, <br />
+              <span class="squiggly-underline">crafting for the web</span>.
+            </h1>
+
+            <p class="hero-hand-intro">
+              Welcome to my digital sketchbook! I am an Information Technology student at 
+              <span class="highlight-blue">MSEUF (Manuel S. Enverga University Foundation)</span> specializing in 
+              <strong>Web &amp; Mobile Application Development</strong>. I love turning concepts into clean, friendly, and hand-crafted digital experiences.
+            </p>
+
+            <div class="hero-hand-actions">
+              <a href="projects.html" class="btn-sketch btn-sketch-primary">
+                <span>See My Projects</span>
+                <span class="doodle-arrow">↳</span>
+              </a>
+              <a href="about.html" class="btn-sketch btn-sketch-secondary">
+                <span>About My Story ✎</span>
+              </a>
+            </div>
+
+            <!-- Sketchy Stats Row -->
+            <div class="sketch-metrics-row">
+              <div class="sketch-metric-item">
+                <span class="metric-val-hand">04+</span>
+                <span class="metric-lbl-hand">Built Projects</span>
+              </div>
+              <div class="sketch-metric-item">
+                <span class="metric-val-hand">BSIT</span>
+                <span class="metric-lbl-hand">MSEUF Lucena</span>
+              </div>
+              <div class="sketch-metric-item">
+                <span class="metric-val-hand">100%</span>
+                <span class="metric-lbl-hand">Curiosity &amp; Care</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Polaroid Portrait & Sticky Note -->
+          <div class="hero-sketch-visual">
+            
+            <!-- Polaroid Portrait Card with Washi Tape -->
+            <article class="polaroid-profile-card">
+              <div class="washi-tape-strip"></div>
+              <div class="polaroid-img-frame">
+                <img 
+                  src="https://ranielgo-portfolio.vercel.app/assets/profile.jpg" 
+                  alt="Jean Raniel Go - Portrait Sketch" 
+                  onerror="this.onerror=null;this.src='assets/avatar-fallback.svg';"
+                />
+              </div>
+              <div class="polaroid-caption">Jean Raniel Go ✨</div>
+              <div class="polaroid-subcaption">Student Developer · Lucena City, PH</div>
+            </article>
+
+            <!-- Sticky Note Widget -->
+            <aside class="sticky-note-box">
+              <div class="washi-tape-strip washi-tape-pink-strip"></div>
+              <h3 class="sticky-note-title">
+                <span>📝</span>
+                <span>Quick Note</span>
+              </h3>
+              <p class="sticky-note-content">
+                "Code is just structured art on a digital canvas. Building with HTML5, CSS3, JavaScript, and always practicing clean craft!"
+              </p>
+            </aside>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         CRAFT PILLARS (DOODLE NOTEBOOK CARDS)
+         ================================================ -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div style="max-width: 600px;">
+          <span style="font-family: var(--font-kalam); color: var(--marker-pink-dark); font-weight: 700;">★ HOW I BUILD</span>
+          <h2 style="font-size: clamp(2.4rem, 5vw, 3.6rem); margin-bottom: 6px;">The Hand-Crafted Approach</h2>
+          <p class="subhead-hand">
+            Combining thoughtful design sensibilities with semantic foundations.
+          </p>
+        </div>
+
+        <div class="craft-sketch-grid">
+          <!-- Pillar 1 -->
+          <div class="craft-sketch-box">
+            <div class="washi-tape-strip washi-tape-blue-strip"></div>
+            <span class="craft-doodle-icon">📐</span>
+            <h3 class="craft-sketch-title">Clean Structure</h3>
+            <p class="craft-sketch-desc">
+              Strong semantic HTML5 skeletons, organized CSS rules, and layouts that adapt smoothly across all screen shapes.
+            </p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="craft-sketch-box">
+            <div class="washi-tape-strip washi-tape-pink-strip"></div>
+            <span class="craft-doodle-icon">🎨</span>
+            <h3 class="craft-sketch-title">Human Warmth</h3>
+            <p class="craft-sketch-desc">
+              Interfaces should feel approachable and alive—delivering delight through friendly micro-details and clean typography.
+            </p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="craft-sketch-box">
+            <div class="washi-tape-strip"></div>
+            <span class="craft-doodle-icon">🚀</span>
+            <h3 class="craft-sketch-title">Eager to Grow</h3>
+            <p class="craft-sketch-desc">
+              Every project is an opportunity to learn, explore new web frameworks, and prepare for collaborative OJT teams.
+            </p>
+          </div>
+        </div>
+
+        <!-- Callout Banner Interconnecting Pages -->
+        <aside class="sketch-cta-banner">
+          <div>
+            <h3 style="font-size: 2.2rem; margin-bottom: 4px;">Want to inspect my projects?</h3>
+            <p style="font-family: var(--font-kalam); color: var(--ink-muted);">
+              Check out my featured real-world web apps with visual landing page previews!
+            </p>
+          </div>
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="projects.html" class="btn-sketch btn-sketch-primary">See Projects ↳</a>
+            <a href="about.html" class="btn-sketch btn-sketch-secondary">Read Bio ✎</a>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ================================================
+       FOOTER
+       ================================================ -->
+  <footer class="sketch-footer">
+    <div class="container">
+      <div class="sketch-footer-grid">
+        <div>
+          <div class="sketch-footer-title">Jean Raniel Go ✎</div>
+          <p style="font-family: var(--font-kalam); font-size: 0.95rem; color: var(--ink-muted); max-width: 340px; line-height: 1.6;">
+            A hand-drawn starter portfolio website crafted with HTML &amp; CSS for my student midterm showcase.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="font-size: 1.5rem; margin-bottom: 10px;">Quick Pages</h4>
+          <ul class="sketch-footer-links">
+            <li><a href="index.html">✎ Home Page</a></li>
+            <li><a href="about.html">✎ About Me &amp; Education</a></li>
+            <li><a href="projects.html">✎ Featured Projects</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 1.5rem; margin-bottom: 10px;">Contact Notes</h4>
+          <ul class="sketch-footer-links">
+            <li>✉ raniel.go112@gmail.com</li>
+            <li>📍 MSEUF, Lucena City, PH</li>
+            <li><a href="https://ranielgo-portfolio.vercel.app" target="_blank" rel="noopener noreferrer">Live Vercel Site ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sketch-footer-bar">
+        <div>© 2026 Jean Raniel Go · Sketched with care</div>
+        <div>Built using Semantic HTML5 &amp; Vanilla CSS</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
