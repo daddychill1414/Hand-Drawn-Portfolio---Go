@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
           toastNotif.style.display = 'flex';
           toastNotif.style.background = '#e6f4ea';
           toastNotif.style.color = '#137333';
-          toastNotif.innerHTML = '<span>🎉</span><span>Message sent successfully! Thanks for reaching out.</span>';
+          toastNotif.innerHTML = '<span>Message sent successfully! Thanks for reaching out.</span>';
           contactForm.reset();
         } else {
           toastNotif.style.display = 'flex';
